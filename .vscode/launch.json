@@ -5,14 +5,30 @@
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes
             // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-            "name": ".NET Core Launch (console)",
+            "name": ".NET Core 3.1 (console)",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
+            "preLaunchTask": "build31",
             // If you have changed target frameworks, make sure to update the program path.
             "program": "${workspaceFolder}/src/EfCore31/bin/Debug/netcoreapp3.1/EfCore31.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/EfCore31",
+            // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            // Use IntelliSense to find out which attributes exist for C# debugging
+            // Use hover for the description of the existing attributes
+            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
+            "name": ".NET Core 5.0 (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build50",
+            // If you have changed target frameworks, make sure to update the program path.
+            "program": "${workspaceFolder}/src/EfCore50/bin/Debug/net5.0/EfCore50.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/EfCore50",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
