@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using EfCore31.Entities;
+
+using Common.Entities;
 
 namespace EfCore31
 {

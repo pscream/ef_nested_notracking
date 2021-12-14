@@ -1,6 +1,6 @@
 using System;
 
-namespace EfCore31.Entities
+namespace Common.Entities
 {
     public class User
     {
@@ -9,6 +9,11 @@ namespace EfCore31.Entities
         public string UserName { get; set; }
 
         public bool IsActive { get; set; }
+
+        public override string ToString()
+        {
+            return $"{nameof(Id)}='{Id}', {nameof(UserName)}='{UserName}'";
+        }
 
     }
 }
